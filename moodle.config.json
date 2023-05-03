@@ -1,13 +1,13 @@
 {
-    "app_id": "com.moodle.moodlemobile",
-    "appname": "Moodle Mobile",
+    "app_id": "br.com.ieex.excelencia",
+    "appname": "Excelencia Mobile",
     "versioncode": 42000,
     "versionname": "4.2.0",
     "cache_update_frequency_usually": 420000,
     "cache_update_frequency_often": 1200000,
     "cache_update_frequency_sometimes": 3600000,
     "cache_update_frequency_rarely": 43200000,
-    "default_lang": "en",
+    "default_lang": "pt-br",
     "languages": {
         "af": "Afrikaans",
         "ar": "عربي",
@@ -85,13 +85,18 @@
         "high": 120
     },
     "customurlscheme": "moodlemobile",
-    "sites": [],
+    "sites": [
+                {
+                    "name": "Excelência Concursos",
+                    "url": "https:\/\/excelenciaconcursos.com.br"
+                }
+             ],
     "multisitesdisplay": "",
     "sitefindersettings": {},
-    "onlyallowlistedsites": false,
+    "onlyallowlistedsites": true,
     "skipssoconfirmation": false,
     "forcedefaultlanguage": false,
-    "privacypolicy": "https://moodle.net/moodle-app-privacy/",
+    "privacypolicy": "https://www.ieex.com.br/legal/privacy-policy/",
     "notificoncolor": "#f98012",
     "enableanalytics": false,
     "enableonboarding": true,
@@ -99,7 +104,7 @@
     "forceLoginLogo": false,
     "ioswebviewscheme": "moodleappfs",
     "appstores": {
-        "android": "com.moodle.moodlemobile",
+        "android": "br.com.ieex.excelencia",
         "ios": "id633359593"
     },
     "wsrequestqueuelimit": 10,
