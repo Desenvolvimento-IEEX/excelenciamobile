@@ -80,7 +80,6 @@
     "@moodlehq/cordova-plugin-qrscanner": "3.0.1-moodle.5",
     "@moodlehq/cordova-plugin-zip": "3.1.0-moodle.1",
     "@moodlehq/ionic-native-push": "5.36.0-moodle.2",
-    "@moodlehq/phonegap-plugin-push": "4.0.0-moodle.3",
     "@ngx-translate/core": "13.0.0",
     "@ngx-translate/http-loader": "6.0.0",
     "@types/chart.js": "2.9.31",
@@ -112,6 +111,7 @@
     "cordova.plugins.diagnostic": "7.1.1",
     "core-js": "3.9.1",
     "es6-promise-plugin": "4.2.2",
+    "firebase": "^9.21.0",
     "hammerjs": "2.0.8",
     "jszip": "3.7.1",
     "mathjax": "2.7.9",
@@ -151,6 +151,8 @@
     "@typescript-eslint/parser": "4.22.0",
     "check-es-compat": "1.1.1",
     "compare-versions": "4.1.4",
+    "cordova-android": "^10.1.2",
+    "cordova-ios": "^6.3.0",
     "cross-env": "7.0.3",
     "eslint": "7.25.0",
     "eslint-config-prettier": "8.3.0",
@@ -185,7 +187,10 @@
     "node": ">=14.15.0 <15"
   },
   "cordova": {
-    "platforms": [],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "plugins": {
       "cordova-plugin-advanced-http": {
         "ANDROIDBLACKLISTSECURESOCKETPROTOCOLS": "SSLv3,TLSv1"
@@ -222,10 +227,6 @@
       "cordova-plugin-wkwebview-cookies": {},
       "@moodlehq/cordova-plugin-zip": {},
       "cordova-sqlite-storage": {},
-      "@moodlehq/phonegap-plugin-push": {
-        "ANDROIDX_CORE_VERSION": "1.6.+",
-        "FCM_VERSION": "23.+"
-      },
       "@moodlehq/cordova-plugin-intent": {},
       "nl.kingsquare.cordova.background-audio": {},
       "cordova.plugins.diagnostic": {
